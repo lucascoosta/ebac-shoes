@@ -1,0 +1,160 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+header {
+  padding: 16px 0;
+  background-color: blue;
+  color: #fff;
+  font-weight: bold;
+}
+
+header nav li {
+  display: inline;
+  margin-left: 16px;
+  font-size: 16px;
+}
+
+header nav li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+header nav li a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#sobre {
+  display: flex;
+}
+
+section {
+  padding: 24px 0;
+}
+
+section h2 {
+  margin-bottom: 16px;
+  color: rgb(48, 48, 255);
+  border-bottom: 1px solid rgb(48, 48, 255);
+}
+
+#sobre p {
+  margin-bottom: 16px;
+}
+
+.logo-loja {
+  margin-right: 32px;
+  width: 50%;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(4, 24.5%);
+  column-gap: 2%;
+  row-gap: 5%;
+  margin-top: 30px;
+}
+
+.card img {
+  width: 250px;
+  height: 250px;
+}
+
+.card h1 {
+  margin-top: 24px;
+  font-weight: bold;
+}
+
+.card p {
+  margin-top: 10px;
+  color: #666;
+}
+
+.btn-adicionar {
+  margin-top: 10px;
+  background-color: #007bff;
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+.btn-adicionar:hover {
+  background-color: #0056b3;
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+  .container {
+    max-width: 90%;
+  }
+
+  .logo-loja {
+    width: 90%;
+    margin-bottom: 16px;
+  }
+
+  #sobre {
+    display: block;
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(2, 49%);
+    column-gap: 2%;
+    row-gap: 5%;
+    margin-top: 30px;
+  }
+
+  .card p {
+    margin-top: 32px;
+    color: #666;
+  }
+
+
+}
+
+@media screen and (max-width: 640px) {
+  .cards {
+    display: block;
+  }
+
+  .container {
+    max-width: 90%;
+  }
+
+  #sobre {
+    display: block;
+  }
+
+  .logo-loja {
+    width: 90%;
+    margin-bottom: 16px;
+  }
+
+  .cards {
+    display: block;
+  }
+
+  .card {
+    margin-bottom: 32px;
+  }
+
+}
